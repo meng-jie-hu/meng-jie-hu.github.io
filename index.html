@@ -1,61 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Research Dashboard</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 50px;
-        }
-        h1 {
-            color: #222;
-        }
-        h2 {
-            margin-top: 40px;
-            color: #444;
-        }
-        a {
-            display: block;
-            margin: 8px 0;
-            text-decoration: none;
-            color: #0066cc;
-        }
-        a:hover {
-            color: #ff6600;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Research Dashboard</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 40px;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+a {
+    display: block;
+    margin: 8px 0;
+    text-decoration: none;
+    color: #0066cc;
+}
+
+a:hover {
+    color: #ff6600;
+}
+</style>
 </head>
 
 <body>
 
 <h1>Research Dashboard</h1>
 
+<div class="dashboard">
+
+<div class="card">
 <h2>Journals</h2>
 <a href="https://ieeexplore.ieee.org/Xplore/home.jsp">IEEE</a>
-<a href="https://www.researchgate.net/">Researchgate</a>
-<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036" target="_blank">IEEE Transactions on Cybernetics</a>
-<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221021">IEEE Transactions on Systems, Man, and Cybernetics: Systems</a>
-<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91">IEEE Transactions on Fuzzy Systems</a> 
-<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE Transactions on Neural Networks and Learning Systems</a> 
-<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9">IEEE Transactions on Automatic Control</a>
-<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488902">IEEE Transactions on Network Science and Engineering</a>  
-<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=25">IEEE Transactions on Vehicular Technology</a> 
+<a href="https://www.researchgate.net/">ResearchGate</a>
+<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036">IEEE Transactions on Cybernetics</a>
+<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221021">IEEE T-SMC Systems</a>
+<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91">IEEE T-Fuzzy Systems</a>
+<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE T-NNLS</a>
+<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9">IEEE TAC</a>
+<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488902">IEEE TNSE</a>
+<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=25">IEEE TVT</a>
+</div>
 
+<div class="card">
 <h2>Funding</h2>
 <a href="https://www.nsfc.gov.cn/">NSFC</a>
 <a href="https://jsszkj.kxjst.jiangsu.gov.cn/js-home/home">Jiangsu Science & Tech</a>
+</div>
 
+<div class="card">
 <h2>Conferences</h2>
-<a href="https://www.call4paper.com/">Conference search</a>
-<a href="https://cdc2025.ieeecss.org" target="_blank">CDC</a>
+<a href="https://www.call4paper.com/">Conference Search</a>
+<a href="https://cdc2025.ieeecss.org">CDC</a>
+</div>
 
+<div class="card">
 <h2>Internal</h2>
 <a href="https://ehall.xjtlu.edu.cn/default/index.html#/">XJTLU</a>
 <a href="https://ras.xjtlu.edu.cn/English/userAction!do_casLogin.action">XJTLU RAS Notices</a>
-<a href="https://ieee.atyponrex.com/submission/dashboard?siteName=iot">IEEE Author Portal</a> 
-    
+<a href="https://ieee.atyponrex.com/submission/dashboard?siteName=iot">IEEE Author Portal</a>
+</div>
+
+</div>
 
 </body>
 </html>
